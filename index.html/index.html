@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshay Khod - Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+.typing-text {
+overflow: hidden;
+white-space: nowrap;
+animation: typing 3.5s steps(40, end);
+}
+.glass-effect {
+backdrop-filter: blur(10px);
+background: rgba(255, 255, 255, 0.1);
+}
+.gradient-text {
+background: linear-gradient(90deg, #6C63FF, #00F5A0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.custom-cursor {
+width: 20px;
+height: 20px;
+border: 2px solid #6C63FF;
+border-radius: 50%;
+position: fixed;
+pointer-events: none;
+z-index: 9999;
+}
+.card-hover:hover {
+transform: translateY(-5px);
+transition: transform 0.3s ease;
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#6C63FF',
+secondary: '#00F5A0'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-[#121212] font-['Inter'] text-white min-h-screen">
+<nav class="fixed w-full z-50 glass-effect">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="text-xl font-semibold gradient-text">AK</div>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a>
+<a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a>
+<a href="#education" class="text-gray-300 hover:text-white transition-colors">Education</a>
+<a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experience</a>
+<a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
+<a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+</div>
+</div>
+</div>
+</nav>
+<section id="home" class="min-h-screen flex items-center relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20abstract%20geometric%20dark%20background%20with%20subtle%20glow%20effects%2C%20professional%20dark%20theme%20with%20blue%20and%20purple%20accents%2C%20high%20quality%20digital%20art&width=1920&height=1080&seq=1&orientation=landscape')">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="relative w-48 h-48 flex-shrink-0">
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse" style="filter: blur(15px);"></div>
+<img 
+  src="akshay khod.webp" 
+  alt="Akshay Khod" 
+  class="w-48 h-48 object-cover rounded-full border-4 border-white shadow-xl overflow-hidden"
+/>
+
+
+</div>
+<div class="space-y-6 text-center md:text-left">
+<h1 class="text-6xl font-bold gradient-text">Akshay Khod</h1>
+<div class="typing-text text-xl text-gray-300">
+Computer Science Student | Web Developer | AI Enthusiast
+</div>
+<div class="flex space-x-4 mt-8">
+<button class="!rounded-button bg-primary hover:bg-opacity-90 px-6 py-3 font-medium">View Projects</button>
+<button class="!rounded-button border border-white hover:bg-white hover:text-black transition-colors px-6 py-3 font-medium">Contact Me</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold mb-12 text-center gradient-text">Skills & Technologies</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glass-effect p-6 rounded-lg card-hover">
+<div class="w-12 h-12 flex items-center justify-center mb-4">
+<i class="ri-code-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
+<p class="text-gray-400">HTML, CSS, JavaScript, React</p>
+<div class="mt-4 bg-gray-700 h-2 rounded-full">
+<div class="bg-primary h-full rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<!-- More skill cards... -->
+</div>
+</div>
+</section>
+<section id="education" class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold mb-12 text-center gradient-text">Education</h2>
+<div class="space-y-8">
+<div class="glass-effect p-8 rounded-lg card-hover">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+<div>
+<h3 class="text-2xl font-bold">B.Sc. Computer Science</h3>
+<p class="text-primary text-lg">Deogiri Institute of Technology and Management Studies</p>
+</div>
+<div class="text-gray-400 mt-2 md:mt-0">2024 - 2027</div>
+</div>
+<p class="text-gray-300">Currently Pursuing</p>
+</div>
+
+<div class="glass-effect p-8 rounded-lg card-hover">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+<div>
+<h3 class="text-2xl font-bold">Higher Secondary Education (HSC)</h3>
+<p class="text-primary text-lg">Sainiki Secondary and High Secondary School Beed</p>
+</div>
+<div class="text-gray-400 mt-2 md:mt-0">2023 - 2024</div>
+</div>
+<p class="text-gray-300">Percentage: 82%</p>
+</div>
+
+<div class="glass-effect p-8 rounded-lg card-hover">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+<div>
+<h3 class="text-2xl font-bold">Secondary School Certificate (SSC)</h3>
+<p class="text-primary text-lg">Sainiki Secondary and High Secondary School Beed</p>
+</div>
+<div class="text-gray-400 mt-2 md:mt-0">2021 - 2022</div>
+</div>
+<p class="text-gray-300">Percentage: 87%</p>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold mb-12 text-center gradient-text">Experience</h2>
+<div class="glass-effect p-8 rounded-lg card-hover">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+<div>
+<h3 class="text-2xl font-bold">Web Development Intern</h3>
+<p class="text-primary text-lg">Aavinya Solutions</p>
+</div>
+<div class="text-gray-400 mt-2 md:mt-0">Mar 2025 - July 2025</div>
+</div>
+<ul class="space-y-3 text-gray-300 list-disc list-inside">
+<li>Created responsive websites using HTML, CSS & WordPress</li>
+<li>Worked on real-world client projects</li>
+<li>Stipend: Rs. 5,000/month</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="projects" class="py-20 bg-black bg-opacity-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold mb-12 text-center gradient-text">Featured Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glass-effect rounded-lg overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20interface%20with%20dark%20theme%2C%20professional%20UI%20design%20showcase&width=600&height=400&seq=2&orientation=landscape" alt="Amazon Clone" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Amazon Clone</h3>
+<p class="text-gray-400 mb-4">A full-stack e-commerce platform with React and Node.js</p>
+<div class="flex space-x-4">
+<a href="#" class="text-primary hover:text-secondary">Demo</a>
+<a href="https://github.com/dhananjay-aghade/amazon-clone" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-secondary">GitHub</a>
+</div>
+</div>
+</div>
+<!-- More project cards... -->
+</div>
+</div>
+</section>
+<section id="certifications" class="py-20 bg-black bg-opacity-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Certifications</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+       <!-- Full-Stack Internship -->
+<div class="glass-effect p-6 rounded-lg card-hover">
+  <i class="ri-code-box-line text-2xl text-primary mb-4"></i>
+  <h3 class="text-xl font-semibold mb-2">Full-Stack Web Dev Internship</h3>
+  <p class="text-gray-400 mb-4">Built scalable front-end & back-end systems using Flask, and REST APIs</p>
+  <button onclick="document.getElementById('cert10').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+  <div id="cert10" class="mt-4 hidden">
+    <embed src="fullstack development 4 internship.pdf" type="application/pdf" width="100%" height="600px" />
+  </div>
+</div>
+
+
+      <!-- AWS Training & Certification -->
+<div class="glass-effect p-6 rounded-lg card-hover">
+  <i class="ri-cloud-line text-2xl text-primary mb-4"></i>
+  <h3 class="text-xl font-semibold mb-2">AWS Training & Certification</h3>
+  <p class="text-gray-400 mb-4">Gained hands-on experience in cloud computing, deployment, EC2, S3, and serverless architecture</p>
+  <button onclick="document.getElementById('cert12').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+  <div id="cert12" class="mt-4 hidden">
+    <embed src="aws.pdf" type="application/pdf" width="100%" height="600px" />
+  </div>
+</div>
+
+      
+
+      
+
+      <!-- Agnirva Internship -->
+      <div class="glass-effect p-6 rounded-lg card-hover">
+        <i class="ri-rocket-2-line text-2xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Agnirva Space Internship</h3>
+        <p class="text-gray-400 mb-4">Completed 80+ hrs in space tech; recognized by ISRO & INSPICe</p>
+        <button onclick="document.getElementById('cert4').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+        <div id="cert4" class="mt-4 hidden">
+          <embed src="Agnirva.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+
+      <!-- ChatGPT Bootcamp -->
+      <div class="glass-effect p-6 rounded-lg card-hover">
+        <i class="ri-brain-line text-2xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">ChatGPT Bootcamp</h3>
+        <p class="text-gray-400 mb-4">Explored prompt engineering and AI-driven productivity tools</p>
+        <button onclick="document.getElementById('cert5').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+        <div id="cert5" class="mt-4 hidden">
+          <embed src="chatgpt bootcamp.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+
+      <!-- Edureka Internship -->
+      <div class="glass-effect p-6 rounded-lg card-hover">
+        <i class="ri-graduation-cap-line text-2xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Edureka Internship</h3>
+        <p class="text-gray-400 mb-4">Practical exposure to backend, APIs & project collaboration</p>
+        <button onclick="document.getElementById('cert6').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+        <div id="cert6" class="mt-4 hidden">
+          <embed src="Edureka - Internship Certificate.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+
+      <!-- Excel Certification -->
+      <div class="glass-effect p-6 rounded-lg card-hover">
+        <i class="ri-file-excel-2-line text-2xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Excel & Data Analysis</h3>
+        <p class="text-gray-400 mb-4">Mastered formulas, pivot tables, and data visualization basics</p>
+        <button onclick="document.getElementById('cert7').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+        <div id="cert7" class="mt-4 hidden">
+          <embed src="Excel.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+
+      <!-- Full Stack Development -->
+      <div class="glass-effect p-6 rounded-lg card-hover">
+        <i class="ri-layout-4-line text-2xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Full Stack Development</h3>
+        <p class="text-gray-400 mb-4">Completed bootcamp covering MERN stack & deployment workflows</p>
+        <button onclick="document.getElementById('cert8').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+        <div id="cert8" class="mt-4 hidden">
+         <embed src="full stack.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+      <!-- Data Analytics Internship -->
+<div class="glass-effect p-6 rounded-lg card-hover">
+  <i class="ri-bar-chart-grouped-line text-2xl text-primary mb-4"></i>
+  <h3 class="text-xl font-semibold mb-2">Data Analytics Internship</h3>
+  <p class="text-gray-400 mb-4">Worked on business dashboards, data storytelling, and decision-making using Power BI & Tableau</p>
+  <button onclick="document.getElementById('cert11').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+  <div id="cert11" class="mt-4 hidden">
+    <embed src="Data Analytics.pdf" type="application/pdf" width="100%" height="600px" />
+  </div>
+</div>
+     
+      <!-- Java Bootcamp -->
+      <div class="glass-effect p-6 rounded-lg card-hover">
+        <i class="ri-java-line text-2xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Java Bootcamp</h3>
+        <p class="text-gray-400 mb-4">Object-oriented programming and real-world project modules</p>
+        <button onclick="document.getElementById('cert9').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+        <div id="cert9" class="mt-4 hidden">
+          <embed src="java bootcamp.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+
+      <!-- JavaScript Cursa -->
+      <div class="glass-effect p-6 rounded-lg card-hover">
+        <i class="ri-javascript-line text-2xl text-primary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">JavaScript (Cursa)</h3>
+        <p class="text-gray-400 mb-4">Full course by Bro Code — dynamic programming essentials</p>
+        <button onclick="document.getElementById('cert10').classList.toggle('hidden')" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">Click here</button>
+        <div id="cert10" class="mt-4 hidden">
+          <embed src="javascript.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+
+    </div>
+
+    
+<section id="contact" class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold mb-12 text-center gradient-text">Get In Touch</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="glass-effect p-8 rounded-lg">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium mb-2">Name</label>
+<input type="text" class="w-full bg-transparent border border-gray-600 rounded-button p-3 focus:border-primary outline-none" required>
+</div>
+<div>
+<label class="block text-sm font-medium mb-2">Email</label>
+<input type="email" class="w-full bg-transparent border border-gray-600 rounded-button p-3 focus:border-primary outline-none" required>
+</div>
+<div>
+<label class="block text-sm font-medium mb-2">Message</label>
+<textarea class="w-full bg-transparent border border-gray-600 rounded-button p-3 focus:border-primary outline-none h-32" required></textarea>
+</div>
+<button type="submit" class="w-full !rounded-button bg-primary hover:bg-opacity-90 py-3 font-medium">Send Message</button>
+</form>
+</div>
+<div class="glass-effect p-8 rounded-lg">
+<div class="space-y-6">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-medium">Email</h3>
+<p class="text-gray-400">akshaykhod287@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-medium">Location</h3>
+<p class="text-gray-400">Mumbai, India</p>
+</div>
+</div>
+<div class="flex space-x-4 mt-8">
+<a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-primary hover:text-primary transition-colors">
+<i class="ri-github-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-primary hover:text-primary transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-primary hover:text-primary transition-colors">
+<i class="ri-twitter-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="py-8 border-t border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400">© 2025 Akshay Khod. All rights reserved.</p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="cursor-animation">
+document.addEventListener('DOMContentLoaded', () => {
+const cursor = document.createElement('div');
+cursor.classList.add('custom-cursor');
+document.body.appendChild(cursor);
+document.addEventListener('mousemove', (e) => {
+cursor.style.left = e.clientX - 10 + 'px';
+cursor.style.top = e.clientY - 10 + 'px';
+});
+});
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', () => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+});
+</script>
+</body>
+</html>
